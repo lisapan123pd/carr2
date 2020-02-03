@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+<meta charset="utf-8">
+<title>阅读</title>
+<meta name="viewport" content="width=device-width,intial-scale=1,user-scalable=no">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div>
+		<div class="detail-list">
+			<img src="" alt="" id="titleimg"/>
+			<div class="detail-title">
+				<div class="title" id="detailtitle"></div>
+				<div class="text">免费！免费！免费看！</div>
+				<div class="more godownload">更多精彩</div>
+			</div>
+			<div class="detail-title godownload" style="margin: 0;">
+				<div class="right_content">
+					<div class="more-all">
+						全站小说
+						<br />
+						免费看
+					</div>
+					<div class="free">免费下载</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<!-- <div @touchstart="touchstart" @touchend="touchend" scroll-y="true" class="img_ico"> -->
+			<div class="img_ico" id="webchat_scroller">
+				<div id="img" class="img on">
+					<div class="head_title" id="headtitle"></div>
+
+		
+
+					<div class="img_text" id="img_text" style="color: #333; font-size: .34rem; background: #fff ">
+						
+					</div>
+
+					<div>
+						<!-- <uni-load-more :status="status" :content-text="contentText" color="#007aff" /> -->
+					</div>
+				</div>
+				<!--  v-if="moreText" -->
+				<div class="moreText" id="moreText">
+					<div class="down_flex">
+						<img class="logo-img" src="image/image/logo.gif" />
+						<img src="image/image/down_tips.png" />
+					</div>
+					<p class="contex" style="text-align: center; margin-top: .32rem;margin-bottom: .32rem;">由于篇幅和尺度有限，未删减版精彩后续：</p>
+					<div class="newVersion">
+						<span class="left-down godownload">下载应用</span>
+						&gt;
+						<span id="fo1" class="middle-down">夜伴小说</span>
+						&gt;
+						<span class="right-down godownload">点击下载</span>
+					</div>
+					<footer class="newVersionDownTips commonPadding"><p>点击下载，继续看爽文</p></footer>
+					<div class="pinlun-c">
+						<div class="title-text"><span style="font-size: .36rem;">留言</span></div>
+						<div class="box">
+							<div class="headimg"><img src="image/image/t1.png" /></div>
+							<div class="name">
+								<span>赵四</span>
+								<span class="icon_praise_gray"><div>14558</div></span>
+								<div style="padding:.08rem;">今天竟然发现一个这么神秘的地方，以后有地方看爽文了，各种都有，哈哈</div>
+								<span class="time">17小时前</span>
+							</div>
+						</div>
+						<div style="clear:both"></div>
+						<div class="box">
+							<div class="headimg"><img src="image/image/t2.png" /></div>
+							<div class="name">
+								<span>男人哭吧不是罪</span>
+								<span class="icon_praise_gray"><div>10352</div></span>
+								<div style="padding:.08rem;">受不了，我刚刚也看了，要去找妹子下火了...</div>
+								<span class="time">15小时前</span>
+							</div>
+						</div>
+						<div style="clear:both"></div>
+						<div class="box">
+							<div class="headimg"><img src="image/image/t3.png" /></div>
+							<div class="name">
+								<span>快意人生</span>
+								<span class="icon_praise_gray"><div>9988</div></span>
+								<div style="padding:.08rem;">精彩，精彩，作者这是真实经历吧，我去看了感觉写的很好啊</div>
+								<span class="time">14小时前</span>
+							</div>
+						</div>
+						<div style="clear:both"></div>
+						<div class="box">
+							<div class="headimg"><img src="image/image/t4.png" /></div>
+							<div class="name">
+								<span>龙虎兄弟</span>
+								<span class="icon_praise_gray"><div>8689</div></span>
+								<div style="padding:.08rem;">我要是有个也这样就爽了，后面太特么好看了</div>
+								<span class="time">9小时前</span>
+							</div>
+						</div>
+						<div style="clear:both"></div>
+						<div style="width:100%;height:100px"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="goskip">
+			<!-- <div class="close"></div> -->
+			<div class="arrows"></div>
+			<div class="box_list">
+				<div class="list">
+					<div class="font">1</div>
+					<div class="item">点击右上角的</div>
+					<div class="dian"><div class="i"></div></div>
+					<div class="list_btn">按钮</div>
+				</div>
+				<div class="list">
+					<div class="font">2</div>
+					<div class="item">选择</div>
+					<div class="dian_">
+						<div class="i"></div>
+						<div class="span">在浏览器中打开</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="alert" class="popturn">
+			<div><img id="closeAlert" src="image/image/cha.png" style="top: 45%; transform: translateY(-133.4px);" /></div>
+			<div id="newBox" style="height: 266.8px;">
+				<div>
+					后续精彩内容请下载【
+					<span class="red-text">夜伴小说</span>
+					】
+				</div>
+				<div>限时福利：全站书籍免费看</div>
+				<div class="godownload" id="btnb">去下载</div>
+				<a id="btncheck" style="" href="javascript:;">下载完成？去阅读!!!</a>
+			</div>
+		</div>
+		<div id="bottom-down" class="bottomDown bottomDown2 godownload">
+			<div class="btm_in"><img src="image/image/down_btn_bottom.png" /></div>
+		</div>
+	</div>
+</body>
+<script src="js/index.js"></script>
+</html>
